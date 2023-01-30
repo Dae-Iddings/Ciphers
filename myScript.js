@@ -1,6 +1,8 @@
-function subCreator(phrase) {
+function rot(phrase) {
 let phraseArray = phrase.toLowerCase().split('');
 let subArray = [];
+
+// push cipher's letter based on phrases letter
 for (let i = 0; i < phraseArray.length; i++){
   if (phraseArray[i] == 'a') {
     subArray.push('n');
@@ -80,3 +82,65 @@ function scramble(phrase) {
     }
     return array.toString().replaceAll(',', '');
   }
+
+function caesar(phrase) {
+    let caesarArray = phrase.toLowerCase().split('');
+    let cipherArray = [];
+
+    for (let i = 0; i < caesarArray.length; i++){
+        if (caesarArray[i] == 'a') {
+           cipherArray.push('x') 
+        } else if (caesarArray[i] == 'b') {
+            cipherArray.push('y') 
+         } else if (caesarArray[i] == 'c') {
+            cipherArray.push('z') 
+         } else if (caesarArray[i] == 'd') {
+            cipherArray.push('a') 
+         } else if (caesarArray[i] == 'e') {
+            cipherArray.push('b') 
+         } else if (caesarArray[i] == 'f') {
+            cipherArray.push('c') 
+         } else if (caesarArray[i] == 'g') {
+            cipherArray.push('d') 
+         } else if (caesarArray[i] == 'h') {
+            cipherArray.push('e') 
+         } else if (caesarArray[i] == 'i') {
+            cipherArray.push('f') 
+         } else if (caesarArray[i] == 'j') {
+            cipherArray.push('g') 
+         } else if (caesarArray[i] == 'k') {
+            cipherArray.push('h') 
+         } else if (caesarArray[i] == 'l') {
+            cipherArray.push('i') 
+         } else if (caesarArray[i] == 'm') {
+            cipherArray.push('j') 
+         } else if (caesarArray[i] == 'n') {
+            cipherArray.push('k') 
+         } else if (caesarArray[i] == 'o') {
+            cipherArray.push('l') 
+         } else if (caesarArray[i] == 'p') {
+            cipherArray.push('m') 
+         } else if (caesarArray[i] == 'q') {
+            cipherArray.push('n') 
+         } else if (caesarArray[i] == 'r') {
+            cipherArray.push('o') 
+         } else if (caesarArray[i] == 's') {
+            cipherArray.push('p') 
+         } else if (caesarArray[i] == 't') {
+            cipherArray.push('q') 
+         } else if (caesarArray[i] == 'u') {
+            cipherArray.push('r') 
+         } else if (caesarArray[i] == 'v') {
+            cipherArray.push('s') 
+         } else if (caesarArray[i] == 'w') {
+            cipherArray.push('t') 
+         } else if (caesarArray[i] == 'x') {
+            cipherArray.push('u') 
+         } else if (caesarArray[i] == 'y') {
+            cipherArray.push('v') 
+         } else if (caesarArray[i] == 'z') {
+            cipherArray.push('w') 
+         }
+    }
+    return cipherArray.toString().replaceAll(',', '');
+} 
