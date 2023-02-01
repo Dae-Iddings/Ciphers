@@ -56,6 +56,8 @@ for (let i = 0; i < phraseArray.length; i++){
     subArray.push('l');
   } else if (phraseArray[i] == 'z') {
     subArray.push('m');
+  } else if (phraseArray[i] = ' ') {
+    subArray.push(' ')
   }
 }
   return subArray.toString().replaceAll(',', '')
@@ -82,7 +84,7 @@ function scramble(phrase) {
   }
 
 function caesar(phrase) {
-    let caesarArray = phrase.toLowerCase().replaceAll(' ', '').split('');
+    let caesarArray = phrase.toLowerCase().split('');
     let cipherArray = [];
 
     for (let i = 0; i < caesarArray.length; i++){
@@ -138,6 +140,8 @@ function caesar(phrase) {
             cipherArray.push('v') 
          } else if (caesarArray[i] == 'z') {
             cipherArray.push('w') 
+         } else if (caesarArray[i] == ' ') {
+            cipherArray.push(' ')
          }
     }
     return cipherArray.toString().replaceAll(',', '');
