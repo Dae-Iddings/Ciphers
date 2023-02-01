@@ -144,3 +144,15 @@ function caesar(phrase) {
     }
     return cipherArray.toString().replaceAll(',', '');
 } 
+let button = document.querySelector('button'); 
+button.addEventListener('click', giveCiphers)
+function giveCiphers(event) {
+    let phraseInput = document.querySelector('#phrase');
+    let phraseValue = phraseInput.value;
+    let rotDom = document.querySelector('.rot');
+    let scrambleDom = document.querySelector('.scramble');
+    let caesarDom = document.querySelector('.ceaser');
+    rotDom.textContent = rot(phraseValue);
+    event.preventDefault();
+}
+   
