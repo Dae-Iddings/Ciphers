@@ -94,7 +94,7 @@
     </ul>
     <div class="formDiv">
         <form>
-            <div>
+            <div class="inputSection">
                 <label for="phrase">Enter Phrase Here:</label>
                 <input type="text" name="phrase" id="phrase" placeholder="I’m the rare case when today comes before yesterday. What am I?">
             </div>
@@ -102,12 +102,14 @@
              <button>Enter</button>
             </div>
         </form>
-        <h5>ROT13</h5>
+        <div class="allCiphers">
+        <h5 class="invisible">ROT13</h5>
         <p class="rot"></p>
-        <h5>Transposition cipher</h5>
+        <h5 class="invisible">Transposition cipher</h5>
         <p class="scramble"></p>
-        <h5>Caesar cipher</h5>
+        <h5 class="invisible">Caesar cipher</h5>
         <p class="caesar"></p>
+        </div>
     </div>
     <script src="myScript.js"></script>
 </body>
