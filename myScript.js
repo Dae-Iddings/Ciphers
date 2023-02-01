@@ -151,8 +151,10 @@ function giveCiphers(event) {
     let phraseValue = phraseInput.value;
     let rotDom = document.querySelector('.rot');
     let scrambleDom = document.querySelector('.scramble');
-    let caesarDom = document.querySelector('.ceaser');
+    let caesarDom = document.querySelector('.caesar');
     rotDom.textContent = rot(phraseValue);
+    scrambleDom.textContent = scramble(phraseValue);
+    caesarDom.textContent = caesar(phraseValue);
     event.preventDefault();
 }
    
