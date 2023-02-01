@@ -13,17 +13,88 @@
         Do you need a cipher for a TTRPG or other game? 
         Just enter the word or phrase you would like put into a cipher. 
         You will receive three ciphers. 
-        Click the links to be taken to a wikipedia page on how to solve the ciphers.
+        Click the links to be taken to a wikipedia page for more info on each cipher.
     </p>
     <ul>
         <li><a href="https://en.wikipedia.org/wiki/ROT13">ROT-13</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Transposition_cipher">Transposition cipher</a> which is just a fancy name for a word scramble</li>
+        <li class="bodySolution"><img class= "rotImage" src="300px-ROT13.png" alt="there are two rows of letters with arrows pointing both up and down between them the top row has letters a through m in alphabetical order. The bottom row has letters m through z in alphabetical order"></li>
+        <li><a href="https://en.wikipedia.org/wiki/Transposition_cipher">Transposition cipher</a> </li>
+        <li class="bodySolution">Transposition Cipher is just a fancy name for a word scramble. To make your scramble easier let your players know how many words long the answer phrase is.</li>
         <li><a href="https://en.wikipedia.org/wiki/Caesar_cipher">Caesar cipher</a></li>
+        <li class="bodySolution">
+            <table>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                    <td>J</td>
+                    <td>K</td>
+                    <td>L</td>
+                    <td>M</td>
+                    <td>N</td>
+                    <td>O</td>
+                    <td>P</td>
+                    <td>Q</td>
+                    <td>R</td>
+                    <td>S</td>
+                    <td>T</td>
+                    <td>U</td>
+                    <td>V</td>
+                    <td>W</td>
+                    <td>X</td>
+                    <td>Y</td>
+                    <td>Z</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td>Y</td>
+                    <td>Z</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                    <td>J</td>
+                    <td>K</td>
+                    <td>L</td>
+                    <td>M</td>
+                    <td>N</td>
+                    <td>O</td>
+                    <td>P</td>
+                    <td>Q</td>
+                    <td>R</td>
+                    <td>S</td>
+                    <td>T</td>
+                    <td>U</td>
+                    <td>V</td>
+                    <td>W</td>
+                </tr>
+            </table>
+        </li>
     </ul>
     <div class="formDiv">
         <form action="myScript.js">
-            
+            <div>
+                <label for="phrase">Enter Phrase Here:</label>
+                <input type="text" name="phrase" id="phrase">
+            </div>
         </form>
+        <h5>ROT13</h5>
+        <p class="rot"></p>
+        <h5>Transposition cipher</h5>
+        <p class="scramble"></p>
+        <h5>Caesar cipher</h5>
+        <p class="caesar"></p>
     </div>
     <script src="myScript.js"></script>
 </body>
