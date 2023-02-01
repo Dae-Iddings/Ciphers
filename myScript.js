@@ -150,6 +150,10 @@ function giveCiphers(event) {
     let rotDom = document.querySelector('.rot');
     let scrambleDom = document.querySelector('.scramble');
     let caesarDom = document.querySelector('.caesar');
+    let invisibleTitle = document.querySelectorAll('.invisible');
+    invisibleTitle.forEach(element => {
+        element.style.display = 'inline';
+    });
     rotDom.textContent = rot(phraseValue);
     scrambleDom.textContent = scramble(phraseValue);
     caesarDom.textContent = caesar(phraseValue);
