@@ -58,7 +58,7 @@ table {
     gap: 10px;
  }
  input {
-    width: 550px;
+    width: 100%;
     height: auto;
     font-size: large;
  }
@@ -96,4 +96,10 @@ button {
 .scramble,
 .caesar {
     color: blue;
+}
+.firstTable {
+    background-color: #dddddd;
+}
+.secondTable {
+    background-color: white;
 }
